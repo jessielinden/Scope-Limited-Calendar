@@ -11,6 +11,9 @@
 		63AA36D127C00AD50086FF0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA36D027C00AD50086FF0E /* ContentView.swift */; };
 		63AA36D327C00AD70086FF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AA36D227C00AD70086FF0E /* Assets.xcassets */; };
 		63AA36D627C00AD70086FF0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AA36D527C00AD70086FF0E /* Preview Assets.xcassets */; };
+		63AA36DD27C00AF30086FF0E /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA36DC27C00AF30086FF0E /* CalendarView.swift */; };
+		63AA36DF27C00B1A0086FF0E /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA36DE27C00B190086FF0E /* CalendarManager.swift */; };
+		63AA36E127C00B230086FF0E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AA36E027C00B230086FF0E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		63AA36D027C00AD50086FF0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63AA36D227C00AD70086FF0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AA36D527C00AD70086FF0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63AA36DC27C00AF30086FF0E /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		63AA36DE27C00B190086FF0E /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		63AA36E027C00B230086FF0E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		63AA36E227C03C090086FF0E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,7 @@
 		63AA36C227C00AD50086FF0E = {
 			isa = PBXGroup;
 			children = (
+				63AA36E227C03C090086FF0E /* README.md */,
 				63AA36CD27C00AD50086FF0E /* Scope-Limited Calendar */,
 				63AA36CC27C00AD50086FF0E /* Products */,
 			);
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				63AA36CE27C00AD50086FF0E /* Scope_Limited_CalendarApp.swift */,
+				63AA36DE27C00B190086FF0E /* CalendarManager.swift */,
 				63AA36D027C00AD50086FF0E /* ContentView.swift */,
+				63AA36DC27C00AF30086FF0E /* CalendarView.swift */,
+				63AA36E027C00B230086FF0E /* Extensions.swift */,
 				63AA36D227C00AD70086FF0E /* Assets.xcassets */,
 				63AA36D427C00AD70086FF0E /* Preview Content */,
 			);
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AA36E127C00B230086FF0E /* Extensions.swift in Sources */,
 				63AA36D127C00AD50086FF0E /* ContentView.swift in Sources */,
+				63AA36DF27C00B1A0086FF0E /* CalendarManager.swift in Sources */,
 				63AA36CF27C00AD50086FF0E /* Scope_Limited_CalendarApp.swift in Sources */,
+				63AA36DD27C00AF30086FF0E /* CalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +289,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -286,7 +301,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +319,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,7 +331,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

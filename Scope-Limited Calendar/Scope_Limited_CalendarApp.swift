@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Scope_Limited_CalendarApp: App {
+  @StateObject var calendarManager = CalendarManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+            .environmentObject(calendarManager)
         }
     }
 }
