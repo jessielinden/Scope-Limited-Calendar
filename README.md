@@ -6,7 +6,7 @@ The project name describes what I wanted, but not what is actually going on. I w
 
 The solution? Limit what the user can see. In hindsight, it's simple, but I went deep into Calendar/Date/DateComponents land until I settled on this approach. For some reason, I thought I'd try and limit the calendar, not the UI. Lesson learned. But now, I have exactly what I want, which is a monthly calendar that is moved through its pages using left and right buttons (as opposed to a tab or scroll view), and the first and last month of the visible calendar are the bounds of an interval that I specify.
 
-I hope if you faced similar confusion about calendars, this may be of use to you.
+I hope if you faced similar confusion about calendars, this may be of use to you. I used XCode 13.2.1.
 
 Majid's article: 
 https://gist.github.com/mecid/f8859ea4bdbd02cf5d440d58e936faec/9169b0293f709bb1f560de2ca8184ea903fd5116
