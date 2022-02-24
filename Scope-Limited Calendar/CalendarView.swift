@@ -52,7 +52,7 @@ struct MonthView<DateView>: View where DateView: View {
   let content: (Date) -> DateView
   
   var isFirstMonth: Bool {
-    if getComparableMonthDate(month) == calendarManager.firstMonth {
+    if getComparableMonthDate() == calendarManager.firstMonth {
       return true
     } else {
       return false
@@ -60,7 +60,7 @@ struct MonthView<DateView>: View where DateView: View {
   }
   
   var isLastMonth: Bool {
-    if getComparableMonthDate(month) == calendarManager.lastMonth {
+    if getComparableMonthDate() == calendarManager.lastMonth {
       return true
     } else {
       return false
@@ -90,22 +90,12 @@ struct MonthView<DateView>: View where DateView: View {
   
   func changeDateBy(_ months: Int) {
     if let date = Calendar.current.date(byAdding: .month, value: months, to: month) {
-      guard checkForMatching(date) else { return }
       self.month = date
     }
   }
   
-  func checkForMatching(_ date: Date) -> Bool {
-    let dateToCompare = getComparableMonthDate(date)
-    if calendarManager.comparableMonthYearPairs.contains(where: { $0 == dateToCompare }) {
-      return true
-    } else {
-      return false
-    }
-  }
-  
-  func getComparableMonthDate(_ date: Date) -> DateComponents {
-    let dateMonthYear = calendar.dateComponents([.month, .year], from: date)
+  func getComparableMonthDate() -> DateComponents {
+    let dateMonthYear = calendar.dateComponents([.month, .year], from: month)
     return dateMonthYear
   }
   
